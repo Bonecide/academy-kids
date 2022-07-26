@@ -1,0 +1,18 @@
+@mixin mobile {
+    @media (max-width: 768px){
+        @content
+    }
+};
+$light-gray : #F4F8FC;
+$orange : #FF5722;
+$gold-gradient : radial-gradient(89.97% 63.99% at 53.6% 58.09%, #D49D26 0%, #FAE355 100%);
+$green-gradient : linear-gradient(142.82deg, #97CE4E 11.11%, #58AA2C 83.28%);
+$blue-gradient : linear-gradient(142.82deg, #8DC8F0 11.11%, #1593DF 83.28%);
+$light-yellow : #FDE3A7;
+$brown : #694A04;
+$brown-gradient : linear-gradient(90deg, #84501E 0.46%, #C27A33 96.98%);
+$green : #70B839;
+$brown-gradient-2 : linear-gradient(180deg, #84501E 20.1%, #C27A33 230.77%);
+$green-gradient-hover : linear-gradient(142.82deg, #AEE861 11.11%, #6DC53E 83.28%);
+$blue-gradient-hover : linear-gradient(142.82deg, #A3D7FB 11.11%, #38A9EE 83.28%);
+$yellow : #F7CA18;   

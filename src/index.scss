@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+@import './styles/global.scss';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+body {
+  background: url('../public/img/bg-desktop.png');
+  background-size:cover; 
+  background-repeat: no-repeat;
+}
+h1,h2,h3,h4,h5 {
+  color : $brown
+}
+h1 {
+  font-weight: 900;
+  font-size: 42px;
+  @include mobile {
+    font-size: 24px;
+  }
+}
+h2 {
+  font-weight: 900;
+  font-size: 36px;
+  @include mobile {
+    font-size: 20px;
+  }
+}
+h3 {
+  font-weight: 900;
+  font-size: 30px;
+  @include mobile {
+    font-size: 18px;
+  }
+}
+h4 {
+  font-weight: 900;
+  font-size: 24px;
+  @include mobile {
+    font-size: 16px;
+  }
+}
+.container {
+  width: 98%;
+  margin: 0 auto;
+}
+
