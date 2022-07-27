@@ -1,12 +1,14 @@
 import { Link } from 'react-router-dom'
 import s from './LeftSideBar.module.scss'
 import games from '../../../fake-data/games.json'
+import { useState } from 'react'
 export default function LeftSideBar() {
 
+    const [roll,setRoll] = useState(false)
     return(
-        <div className={s.sidebar}>
+        <div style={{'width' : `${roll? "5%" : '20%'}`, 'transition' : 'all 0.5s'}} className={s.sidebar}>
            <div className={s.topor}>
-           <div className={s.img}>   
+           <div style={{'display' : `${roll ? 'none' : 'block'}`}} className={s.img}>   
                     <Link to={'/'}>
                         <img src={'/img/logo.svg'} alt="" />
                     </Link>
@@ -17,16 +19,16 @@ export default function LeftSideBar() {
                             <div>
                                 <img src={game.img} alt={game.game} />
                             </div>
-                            <p>{game.game}</p>
+                            <p style={{'display' : `${roll ? 'none' : 'block'}`}}>{game.game}</p>
                         </div>
                     ))}
             </div>
            </div>
-            <div className={s.rollup}>
+            <div onClick={() => setRoll(!roll)} className={s.rollup}>
                 <div>
-                    <img src={'/img/icons/back.svg'} alt="" />
+                    <img style={{'transform' : `${roll ? 'rotate(180deg)' : 'rotate(0deg)'}`}} src={'/img/icons/back.svg'} alt="" />
                 </div>
-                <p>Свернуть</p>
+                <p style={{'display' : `${roll ? 'none' : 'block'}`}}>Свернуть</p>
             </div>
         </div>
     )

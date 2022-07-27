@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    gap: 45px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.headline {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 52px;
+    font-weight: 900;
+}

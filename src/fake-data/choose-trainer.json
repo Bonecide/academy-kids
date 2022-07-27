@@ -1,0 +1,28 @@
+[
+    {
+        "id" : 1,
+        "text" : "Флеш-анзан",
+        "img" : "/img/BoyAndGirl.png"
+    },
+    {
+        "id" : 2,
+        "text" : "Флеш-карты",
+        "img" : "/img/asian-girl.png"
+    },
+    {
+        "id" : 3,
+        "text" : "Столбцы",
+        "img" : "/img/boyinblue.png"
+    },
+    {
+        "id" : 4,
+        "text" : "умножайка",
+        "img" : "/img/girlinred.png"
+    },
+    {
+        "id" : 5,
+        "text" : "Генератор",
+        "img" : "/img/boywithscores.png"
+    }
+
+]

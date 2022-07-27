@@ -1,0 +1,69 @@
+@import '../../styles/global.scss';
+.Card {
+    width: 230px;
+    height: 290px;
+    position: relative;
+    background: url('../../../public/img/CardBg.png');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+   .img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 230px;
+     height: 290px;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+   
+   }
+   .button {
+    width: auto;
+    button {
+        z-index: 2;
+       margin-bottom: 20px;
+        padding: 10px 20px;
+        color: $brown;
+        font-size: 24px;
+        font-weight: 900;
+        background: white;
+        transition: all 0.2s;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px ;
+        cursor: pointer;
+        box-shadow: 0px 2px 3px 0px #00000033;
+
+        &:hover {
+            background: $green-gradient;
+            color:white;
+        }
+
+    }
+  }
+   
+}
+.container {
+    padding: 5px;
+    position: relative;
+    // overflow: hidden;
+  
+    .topStick {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+    .bottomStick {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+    }
+}

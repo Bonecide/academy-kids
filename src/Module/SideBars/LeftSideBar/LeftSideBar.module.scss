@@ -4,8 +4,8 @@
     margin-top: 10px;
     border: 5px solid #F4F8FCB2;
     border-radius: 15px;
-    height:95vh;
-    width: 270px;
+    min-height:95vh;
+    
     overflow: hidden;
     background: url('../../../../public/img/sidebar_bg.png');
     background-size: cover;
@@ -67,6 +67,7 @@
             img {
                 width: 20px;
                 height: 20px;
+                transition: all 0.5s;
             }
            
             
