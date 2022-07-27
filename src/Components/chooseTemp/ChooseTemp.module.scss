@@ -1,0 +1,46 @@
+@import '../../styles/global.scss';
+
+.temp {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    .title {
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 227px;
+    border: 2px solid $brown;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    padding: 10px;
+    .box {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        background: #FDE3A7;
+        cursor: pointer;
+    }
+    input {
+        border: none;
+        background: transparent;
+        width: 100px ;
+        font-size: 19px;
+        font-weight: 700;
+        color: $brown;
+        text-align: center;
+        &:focus {
+            outline: none;
+        }
+    }
+}

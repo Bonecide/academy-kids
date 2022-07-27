@@ -2,7 +2,8 @@
     {
         "id" : 1,
         "text" : "Флеш-анзан",
-        "img" : "/img/BoyAndGirl.png"
+        "img" : "/img/BoyAndGirl.png",
+        "link" : "/fleshAnzan"
     },
     {
         "id" : 2,

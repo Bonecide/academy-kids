@@ -11,7 +11,7 @@ export default function ChooseTrainer() {
                 <MainPageCard 
                 img={info.img}
                 buttonText={info.text}
-                
+                link={info.link}
                 key={`trainN${idx}`}/>
             ))}
         </div>

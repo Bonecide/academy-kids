@@ -2,11 +2,12 @@ import { Link } from 'react-router-dom'
 import s from './LeftSideBar.module.scss'
 import games from '../../../fake-data/games.json'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 export default function LeftSideBar() {
-
+    const navigate = useNavigate()
     const [roll,setRoll] = useState(false)
     return(
-        <div style={{'width' : `${roll? "5%" : '20%'}`, 'transition' : 'all 0.5s'}} className={s.sidebar}>
+        <div style={{'width' : `${roll? "6%" : '19%'}`, 'transition' : 'all 0.5s'}} className={s.sidebar}>
            <div className={s.topor}>
            <div style={{'display' : `${roll ? 'none' : 'block'}`}} className={s.img}>   
                     <Link to={'/'}>
@@ -15,7 +16,7 @@ export default function LeftSideBar() {
             </div>
             <div className={s.container}>
                     {games.map((game,idx) => (
-                        <div key={`gameN${idx}`} className={s.game}>
+                        <div onClick={() => navigate(game.link)} key={`gameN${idx}`} className={s.game}>
                             <div>
                                 <img src={game.img} alt={game.game} />
                             </div>

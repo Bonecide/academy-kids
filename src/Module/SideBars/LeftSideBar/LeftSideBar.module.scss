@@ -1,10 +1,10 @@
 @import'../../../styles/global.scss';
 .sidebar {
-    padding: 0px 20px 20px 15px;
+    padding: 0px 20px 20px 20px;
     margin-top: 10px;
     border: 5px solid #F4F8FCB2;
     border-radius: 15px;
-    min-height:95vh;
+    height:95vh;
     
     overflow: hidden;
     background: url('../../../../public/img/sidebar_bg.png');
@@ -19,12 +19,7 @@
     .img {
         align-self: center;
     }
-    img {
-        
-        width:212px;
-        height: 132px;
-        top: 1%;
-    }
+   
     .container {
         margin-top: 30px;   
        
