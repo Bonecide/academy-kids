@@ -1,8 +1,11 @@
 import s from './ChooseTrainer.module.scss'
 import item from '../../fake-data/choose-trainer.json'
 import MainPageCard from '../MainPageCard/MainPageCard'
+import { useSelector } from 'react-redux';
 export default function ChooseTrainer() {
+  
 
+    
     return(
       <>
       <h1 className={s.headline}>Выберите тренажёр</h1>

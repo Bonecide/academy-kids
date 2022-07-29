@@ -8,8 +8,12 @@ import FleshCard from './Pages/FleshCards';
 import Generator from './Pages/Generator';
 import Multiply from './Pages/Multiply';
 import Columns from './Pages/Columns';
+import { useState } from 'react';
+import Registration from './Pages/Registration/Registration';
+
 
 function App() {
+ 
   return (
     <Routes>
       <Route element={<Layout/>}>
@@ -19,7 +23,9 @@ function App() {
         <Route path='generator' element={<Generator/>}/>
         <Route path='multiply' element={<Multiply/>}/>
         <Route path='columns' element={<Columns/>}/>
-      </Route>
+      </Route> 
+      <Route path = 'LogReg' element={<Registration/>} />
+      
     </Routes>
   );
 }
