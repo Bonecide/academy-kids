@@ -2,7 +2,7 @@ import ChooseTemp from '../../Components/chooseTemp/ChooseTemp'
 import Select from '../../Components/selects/Select'
 import s from './GameWrapperAnzan.module.scss'
 
-export default function GameWrapper({title ,img}) {
+export default function GameWrapperAnzan() {
 
     return(
         <div className={` ${s.container}`}>
@@ -12,7 +12,7 @@ export default function GameWrapper({title ,img}) {
                         <img className={s.topStick} src={'/img/stick.png'}alt="" />
                         <div className={s.Card}>
                             
-                                <h2>{title}</h2>
+                                <h2>Флеш-анзан</h2>
                         </div>
                         <img className={s.bottomStick} src={'/img/stick.png'}alt="" />
                     </div>
@@ -24,6 +24,9 @@ export default function GameWrapper({title ,img}) {
                                 <img src={'/img/icons/gamesetting.svg'} alt="" />
                         </div>
                         <div className={s.gameSettings}>
+                                 <img src={'/img/icons/volumeon.svg'} alt="" />
+                        </div>
+                        <div className={s.gameSettings}>
                                  <img src={'/img/icons/fullscreen.svg'} alt="" />
                         </div>
                     </div>
@@ -31,9 +34,10 @@ export default function GameWrapper({title ,img}) {
             <div className={s.game}>
               
                 <div className={s.settings}>
-                    <ChooseTemp className={s.Select}/>
-                    <ChooseTemp className={s.Select}/>
-                    <ChooseTemp title='Время, сек.' type="Скорость" className={s.Select}/>
+                    <Select/>
+                    <ChooseTemp/>
+                    <ChooseTemp/>
+                    <ChooseTemp title='Время, сек.' type="Скорость"/>
                 </div>
                 <div className={s.button}>
                     <button>Начать</button>
@@ -42,7 +46,7 @@ export default function GameWrapper({title ,img}) {
             </div>
             <div>
                 <div className={s.sideImg}>
-                    <img src={img} alt="" />
+                    <img src={'/img/BoyAndGirlFull.png'} alt="" />
                 </div>
             </div>
         </div>

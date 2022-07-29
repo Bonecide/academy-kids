@@ -1,12 +1,12 @@
 import ChooseTemp from "../Components/chooseTemp/ChooseTemp";
 import Select from "../Components/selects/Select";
-import GameWrapper from "../Module/GameWrapper/GameWrapper";
+import GameWrapperAnzan from "../Module/GameWrapper/GameWrapperAnzan";
 
 export default function FleshAnzan() {
 
     return(
         <div>
-            <GameWrapper/>
+            <GameWrapperAnzan/>
         </div>
     )
 }

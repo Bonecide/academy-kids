@@ -8,22 +8,26 @@
     {
         "id" : 2,
         "text" : "Флеш-карты",
-        "img" : "/img/asian-girl.png"
+        "img" : "/img/asian-girl.png",
+        "link" : "/fleshCards"
     },
     {
         "id" : 3,
         "text" : "Столбцы",
-        "img" : "/img/boyinblue.png"
+        "img" : "/img/boyinblue.png",
+        "link" : "/columns"
     },
     {
         "id" : 4,
         "text" : "умножайка",
-        "img" : "/img/girlinred.png"
+        "img" : "/img/girlinred.png",
+        "link" : "/multiply"
     },
     {
         "id" : 5,
         "text" : "Генератор",
-        "img" : "/img/boywithscores.png"
+        "img" : "/img/boywithscores.png",
+        "link" : "/generator"
     }
 
 ]

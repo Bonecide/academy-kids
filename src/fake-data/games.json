@@ -8,26 +8,30 @@
     {
         "id" : 2,
         "game" : "Флеш-карты",
-        "img" : "/img/icons/anzan.svg"
+        "img" : "/img/icons/flesh-cards.svg",
+        "link" : "/fleshCards"
     },
     {
         "id" : 3,
         "game" : "Столбцы",
-        "img" : "/img/icons/anzan.svg"
+        "img" : "/img/icons/columns.svg",
+        "link" : "/columns"
     },
     {
         "id" : 4,
         "game" : "Умножайка",
-        "img" : "/img/icons/anzan.svg"
+        "img" : "/img/icons/multiply.svg",
+        "link" : "/multiply"
     },
     {
         "id" : 5,
         "game" : "Генератор",
-        "img" : "/img/icons/anzan.svg"
+        "img" : "/img/icons/generator.svg",
+        "link" : "/generator"
     },
     {
         "id" : 6,
         "game" : "Рейтинг",
-        "img" : "/img/icons/anzan.svg"
+        "img" : "/img/icons/group.svg"
     }
 ]

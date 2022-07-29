@@ -1,28 +1,43 @@
 import s from './ChooseTemp.module.scss'
 import { useEffect, useState } from 'react';
 
-export default function ChooseTemp() {
-    const [value,setValue] = useState(1)
+export default function ChooseTemp({className,title = 'количество цифр',type}) {
+    const [value,setValue] = useState(type === 'Скорость' ? 0.1 : 1)
     const increment = () => {
-        setValue (Number(value) + 1)
+        if(type === 'Скорость') {
+            setValue ((Number(value) + 0.1).toFixed(1))
+        }
+        else  setValue (Number(value) + 1)
     }
     const decrement = () => {
-        setValue (value - 1)
-        if (value === 0 || 1 ) {
+        if(type === 'Скорость') {
+            setValue ((Number(value) - 0.1).toFixed(1))
+        }
+        else {
+            setValue (Number(value) - 1)
+        }
+        if (value === 0  && type === "Скорость" ) {
+            setValue(0.1)
+        }
+        else if (value === 1 && !type) {
             setValue(1)
         }
+        
     }   
     useEffect(() => {
         if(value < 0 ) {
-            setValue(1)
+            if (type === 'Скорость') {
+            setValue(0.1)
+            }
+            else setValue(1)
         }
     },[value])
     return(
-        <div className={s.temp}>
+        <div className={s.temp} >
             <h2 className={s.title}>
-             количество цифр
+             {title}
             </h2>
-            <div className={s.container}>
+            <div className={`${s.container} ${className}`}>
                 <div onClick={decrement}  className={s.box}>
                     <img src={"/img/icons/minus.svg"} alt="" />
                 </div>
