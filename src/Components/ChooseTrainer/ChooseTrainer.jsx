@@ -23,6 +23,7 @@ export default function ChooseTrainer() {
             <div className={s.Slider}>
                 <Slider/>
             </div>
+            <div className={s.yakor}/>
         </div>
      </>   
     )

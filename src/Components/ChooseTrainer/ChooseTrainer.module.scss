@@ -34,3 +34,10 @@
         margin-top: 37px;
     }
 }
+.yakor {
+    display: none;
+    height: 135px;
+    @include mobile {
+        display:  block;
+    }
+}
