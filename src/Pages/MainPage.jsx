@@ -8,7 +8,7 @@ export default function MainPage() {
     const navigate = useNavigate()
     useEffect(() => {
         if(!isAuth) {
-            navigate('LogReg')
+            navigate('/LogReg')
         }
     },[isAuth])
     return(

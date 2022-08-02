@@ -1,0 +1,37 @@
+.container {
+    .numbers {
+        display: flex;
+        gap: 15px;
+        .select {
+            width: 400px !important;
+        }
+    }
+    .method {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        align-items: flex-start;
+    
+        .bigSelect {
+            width: 370px !important;
+        }
+        .smallSelect {
+            width: 230px !important;
+        }
+        form {
+            display: flex;
+            gap: 15px;
+            margin-top: 3%;
+        }
+    }
+    .temps {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 50px;
+        .temp {
+            width: 306px;
+
+        }
+    }
+}
