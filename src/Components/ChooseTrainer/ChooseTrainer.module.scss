@@ -1,10 +1,26 @@
+@import '../../styles/global.scss';
 .container {
-    display: flex;
-    gap: 45px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-    width: 100%;
+   
+    .desktop {
+        display: block;
+        display: flex;
+        gap: 45px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+
+        @include mobile {
+            display: none;
+        }
+    }
+    .Slider {
+        display: none;
+        @include mobile {
+            display: block;
+        }
+    }
+    
 }
 .headline {
     margin-top: 10px;
@@ -13,4 +29,8 @@
     font-size: 52px;
     font-weight: 900;
     text-transform: uppercase;
+    @include mobile {
+        font-size: 24px;
+        margin-top: 37px;
+    }
 }

@@ -12,6 +12,9 @@
     background: url('../../../../public/img/sidebar_bg.png');
     background-size: cover;
     align-items: center;
+    @include mobile {
+        display: none;
+    }
     .icons {
         display: flex;
         flex-direction: column;

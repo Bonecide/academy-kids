@@ -12,6 +12,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include mobile {
+        display: none;
+    }
     .topor {
         display: flex;
         flex-direction: column;
