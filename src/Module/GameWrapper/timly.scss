@@ -1,0 +1,6 @@
+@import '../../styles/global.scss';
+.inputs {
+   @include mobile {
+    width: 100% ;
+   }
+}

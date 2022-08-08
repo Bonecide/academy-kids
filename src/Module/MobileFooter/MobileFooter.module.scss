@@ -5,8 +5,11 @@
     width: 100%;
     background: #70B839CC;
     align-items: center;
- margin-top: 50px;
+    margin-top: 50px;
     justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
     @include mobile {
         display: flex;
     }
