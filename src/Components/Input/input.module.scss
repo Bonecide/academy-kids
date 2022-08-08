@@ -1,0 +1,26 @@
+@import '../../styles/global.scss';
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width:100%;
+    p {
+        text-transform: uppercase;
+        color: $brown;
+        font-weight: 700;
+        font-size: 15px;
+    }
+    input {
+        width: 100%;
+        height: 50px;
+        padding-left: 15px;
+        display: flex;
+        align-items: center;
+        background: #FFFFFF80;
+        border: 2px solid #694A04;
+        border-radius: 8px;
+        font-weight: 700;
+        color: #694A04;
+        font-size: 19px;
+    }
+}

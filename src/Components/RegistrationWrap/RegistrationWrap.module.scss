@@ -5,6 +5,11 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    .logo {
+        @include mobile {
+            display: none;
+        }
+    }
     .Wrap {
         padding: 30px;
         margin-top: 50px;
@@ -16,6 +21,9 @@
         flex-direction: column;
         align-items: center;
         gap: 30px;
+        @include mobile {
+            width: 90%;
+        }
         .registration {
             display: flex;
             flex-direction: column;
@@ -42,6 +50,10 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                @include mobile {
+                    flex-direction: column;
+                    gap: 30px;
+                }
             }
         }
         .type {
@@ -54,18 +66,27 @@
                 font-size: 35px;
                 opacity: 0.5;
                 cursor: pointer;
+                @include mobile {
+                    font-size: 24px;
+                }
             }
             
             .active {
                 font-size: 35px; 
                 opacity: 1;
                 cursor: pointer;
+                @include mobile {
+                    font-size: 24px;
+                }   
             }
         }
         .inputs_container {
             display: flex;
             gap: 30px;
             width: 100%;
+            @include mobile {
+                flex-direction: column;
+            }
             .inputs {
                 display: flex;
                 flex-direction: column;
@@ -99,12 +120,19 @@
         justify-content: center;
         flex-wrap: wrap;
         width: 100%;
+        @include mobile {
+            flex-direction: column;
+        
+        }
         .inputs {
             display: flex;
            
             flex-direction: column;
             gap: 6px;
             width:45%;
+            @include mobile {
+                width: 100%;
+            }
             p {
                 text-transform: uppercase;
                 color: $brown;
@@ -188,5 +216,17 @@
     button[disabled]{
     opacity: 0.5;
     cursor:no-drop;
+    }
+}
+.success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    p {
+        text-align: center;
+    }
+    h2 {
+        text-transform: uppercase;
     }
 }

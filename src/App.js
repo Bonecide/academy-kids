@@ -10,6 +10,7 @@ import Multiply from './Pages/Multiply';
 import Columns from './Pages/Columns';
 import { useState } from 'react';
 import Registration from './Pages/Registration/Registration';
+import PasswordRecovery from './Pages/Registration/PasswordRecovery';
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
         <Route path='columns' element={<Columns/>}/>
       </Route> 
       <Route path = 'LogReg' element={<Registration/>} />
-      
+      <Route path='PasswordRecovery' element={<PasswordRecovery/>}/>
     </Routes>
   );
 }
