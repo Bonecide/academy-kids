@@ -59,10 +59,10 @@ export default function RegistrationWrap() {
                     <form>
                     <div className={s.login_inputs}>
                        
-                             <Input required={true} type='text' placeholder={'Введите ваше имя'} title={'Имя'}/>
-                             <Input required={true} type='email' placeholder={'Введите ваш У-ьфшд'} title={'E-mail'}/>
+                             <Input className={s.inputs} required={true} type='text' placeholder={'Введите ваше имя'} title={'Имя'}/>
+                             <Input className={s.inputs}required={true} type='email' placeholder={'Введите ваш У-ьфшд'} title={'E-mail'}/>
                           
-                            <Input value={password} setValue={setPassword} required={true} type='password' title={'пароль'}/>
+                            <Input  className={s.inputs} value={password} setValue={setPassword} required={true} type='password' title={'пароль'}/>
                           
                           <div className={s.inputs}>
                                       <p>Повторите пароль</p>
