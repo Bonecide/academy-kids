@@ -37,10 +37,7 @@ export default function GameWrapperAnzan() {
                         </div>
                     </div>
                 <div className={s.game}>
-                
-                {!isSettings ? (
-                <>
-                 <div className={s.mobileOnly}>
+                <div className={s.mobileOnly}>
                         <div>
                                 <h1>Флеш-Анзан</h1>
                         </div>
@@ -53,6 +50,9 @@ export default function GameWrapperAnzan() {
                             </div>
                         </div>
                     </div>
+                {!isSettings ? (
+                <>
+              
                     <div className={s.settings}>
                     <Select className={'inputs'}/>
                     <ChooseTemp className={'inputs'}/>

@@ -1,27 +1,52 @@
+@import '../../styles/global.scss';
 .container {
+    @include mobile {
+        width: 100%;
+    }
     .numbers {
         display: flex;
         gap: 15px;
+        @include mobile {
+            flex-direction: column;
+        }
         .select {
             width: 400px !important;
+            @include mobile {
+                width: 100% !important;
+            }
         }
+
     }
     .method {
         display: flex;
         justify-content: space-between;
         margin-top: 40px;
         align-items: flex-start;
+        @include mobile {
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+        }
     
         .bigSelect {
             width: 370px !important;
+            @include mobile {
+                width: 100% !important;
+            }
         }
         .smallSelect {
             width: 230px !important;
+            @include mobile {
+                width: 100% !important;
+            }
         }
         form {
             display: flex;
             gap: 15px;
             margin-top: 3%;
+            @include mobile {
+                flex-direction: column;
+            }
         }
     }
     .temps {
@@ -29,9 +54,14 @@
         flex-wrap: wrap;
         gap: 15px;
         margin-top: 50px;
+        @include mobile {
+            width: 100% !important;
+        }
         .temp {
             width: 306px;
-
+            @include mobile {
+                width: 100% !important;
+            }
         }
     }
 }

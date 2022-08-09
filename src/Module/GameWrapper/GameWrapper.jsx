@@ -35,10 +35,7 @@ export default function GameWrapper({title ,img}) {
                         </div>
                     </div>
                 <div className={s.game}>
-                
-                {!isSettings ? (
-                <>
-                    <div className={s.mobileOnly}>
+                <div className={s.mobileOnly}>
                         <div>
                                 <h1>{title}</h1>
                         </div>
@@ -50,7 +47,10 @@ export default function GameWrapper({title ,img}) {
                                     <img src={'/img/icons/gamesetting.svg'} alt="" />
                             </div>
                         </div>
-                    </div>
+                    </div>  
+                {!isSettings ? (
+                <>
+                   
                     <div className={s.settings}>
                     <Select     className={'inputs'}/>
                     <ChooseTemp className={'inputs'}/>

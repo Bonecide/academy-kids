@@ -22,7 +22,7 @@ export default function Settings() {
                     <Select className={s.smallSelect}/>
             </div>
             <div className={s.temps}>
-                    <ChooseTemp className={s.temp}/>
+                    <ChooseTemp className={`${s.temp} inputs`}/>
                     <ChooseTemp title='Прогресс' className={s.temp}/>
                     <ChooseTemp title='Учеличить / уменьшить' className={s.temp}/>
                     <ChooseTemp title='Количество слагаемых' className={s.temp}/>

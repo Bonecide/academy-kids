@@ -5,6 +5,9 @@
     flex-direction: column;
     gap: 6px;
     align-items: center;
+    @include mobile {
+        width: 100%;
+    }
     .title {
         font-size: 15px;
         font-weight: 700;
@@ -21,6 +24,7 @@
     background: rgba(255, 255, 255, 0.5);
     overflow: hidden;
     padding: 10px;
+   
     .box {
         width: 30px !important;
         height: 30px;
