@@ -40,11 +40,24 @@ export default function GameWrapperAnzan() {
                 
                 {!isSettings ? (
                 <>
+                 <div className={s.mobileOnly}>
+                        <div>
+                                <h1>Флеш-Анзан</h1>
+                        </div>
+                    <div className={s.gameSettings__container}>
+                        <div className={s.gameSettings}>
+                                    <img src={'/img/icons/play.svg'} alt="" />
+                            </div>
+                            <div onClick={() => setIsSettings(!isSettings)} style= {{'background' : isSettings && 'linear-gradient(142.82deg, #97CE4E 11.11%, #58AA2C 83.28%)'}} className={s.gameSettings}>
+                                    <img src={'/img/icons/gamesetting.svg'} alt="" />
+                            </div>
+                        </div>
+                    </div>
                     <div className={s.settings}>
-                    <Select/>
-                    <ChooseTemp/>
-                    <ChooseTemp/>
-                    <ChooseTemp title='Время, сек.' type="Скорость"/>
+                    <Select className={'inputs'}/>
+                    <ChooseTemp className={'inputs'}/>
+                    <ChooseTemp className={'inputs'}/>
+                    <ChooseTemp className={'inputs'} title='Время, сек.' type="Скорость"/>
                 </div>
                 <div className={s.button}>
                     <button>Начать</button>

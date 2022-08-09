@@ -59,6 +59,9 @@
                 font-size: 24px;
                 cursor: pointer;
                 border-radius: 50px;
+                @include mobile {
+                    padding: 15px 88px;
+                }
             }
         }
     }
@@ -79,6 +82,9 @@
     padding: 40px;
     position: relative;
     z-index: 2;
+    @include mobile {
+        padding: 20px;
+    }
     .absolute {
         position: absolute;
         top:0;
