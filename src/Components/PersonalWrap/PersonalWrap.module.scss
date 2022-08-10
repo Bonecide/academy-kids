@@ -1,0 +1,27 @@
+@import '../../styles/global.scss';
+.container {
+    max-width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    .parent {
+        position: relative;
+        padding: 50px;
+        padding-bottom: 0;
+    }
+    .absolute {
+        position: absolute;
+        top: 0;
+        padding-left: 50px;
+    }
+
+    .wrap {
+        padding: 40px 50px;
+        padding-top: 80px;
+        background: rgba(254, 231, 205, 0.7);
+        border: 5px solid rgba(244, 248, 252, 0.7);
+        border-radius: 15px;
+        
+    }
+}

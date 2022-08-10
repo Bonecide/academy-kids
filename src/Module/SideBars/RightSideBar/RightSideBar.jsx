@@ -1,17 +1,19 @@
 import s from './RightSideBard.module.scss'
 import { useDispatch } from 'react-redux';
 import { deleteAuth } from '../../../store/AuthSlice';
+import { useNavigate } from 'react-router-dom';
 
 export default function RightSideBar() {
     const dispatch = useDispatch()
     const logout = () => {
         dispatch(deleteAuth())
     }
+    const navigate = useNavigate()
     return(
         <div className={s.sidebar}>
                <div className={s.container}>
-                    <div>
-                        <img src={'/img/avatar.png'} alt="avatar" />
+                    <div onClick={() => navigate('/personalAccount')} className={s.avatar}>
+                        <img  src={'/img/avatar.png'} alt="avatar" />
                     </div>
                   <div className={s.icons}>
                     <div className={s.tabs}>

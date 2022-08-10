@@ -1,7 +1,6 @@
 import s from './MainPageCard.module.scss'
 import { useNavigate } from 'react-router-dom';
 export default function MainPageCard({img,link,buttonText}) {
-    console.log(link)
     const navigate =useNavigate()
     return(
        <div className={s.container}>
