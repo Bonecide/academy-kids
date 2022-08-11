@@ -30,39 +30,39 @@ export default function MainInfoAcc() {
                 {isChange ? (
                     <form onSubmit={handleSubmit(save)} className={s.form}>
                     <div className={s.inputs}>
-                    <div className={'input_inputs__1Lw9z '}>
+                    <div>
                             <p>Имя</p>
                             <input required value={value.name} onInput={(e) => setValue({name: e.target.value })}  {...register('name')} type="text" />
                     </div>
-                    <div   className={'input_inputs__1Lw9z '}>
+                    <div  >
                             <p>Фамилия</p>
                             <input required value={value.surname} onInput={(e) => setValue({surname: e.target.value })} {...register('surname')} type="text" />
                     </div>
-                    <div className={'input_inputs__1Lw9z '}>
+                    <div>
                             <p>Отчество</p>
                             <input value={value.middlename} onInput={(e) => setValue({middlename: e.target.value })} {...register('middlename')} type="text" />
                     </div>
-                    <div className={'input_inputs__1Lw9z '}>
+                    <div>
                             <p>Логин</p>
                             <input required value={value.login} onInput={(e) => setValue({login: e.target.value })} {...register('login')} type="text" />
                     </div>
-                    <div className={'input_inputs__1Lw9z '}>
+                    <div>
                             <p>E-mail</p>
                             <input required  value={value.mail} onInput={(e) => setValue({mail: e.target.value })} {...register('mail')} type="email"  />
                     </div>
-                    <div className={'input_inputs__1Lw9z '}>
+                    <div>
                             <p>Пароль</p>
                             <input required  value={value.password} onInput={(e) => setValue({password: e.target.value })} {...register('password')} type="password"  />
                     </div>
-                    <div className={'input_inputs__1Lw9z '}>
+                    <div>
                             <p>Адрес</p>
                             <input  value={value.address} onInput={(e) => setValue({address: e.target.value })} {...register('address')} type="text" />
                     </div>
-                    <div className={'input_inputs__1Lw9z '}>
+                    <div>
                             <p>Дата рождения</p>
                             <input  value={value.date} onInput={(e) => setValue({date: e.target.value })} {...register('date')} type="date"  />
                     </div>
-                    <div className={'input_inputs__1Lw9z '}>
+                    <div>
                             <p>Паспорт</p>
                             <input  value={value.passport} onInput={(e) => setValue({passport: e.target.value })} {...register('passport')} type="number"  />
                     </div>
@@ -74,15 +74,15 @@ export default function MainInfoAcc() {
                                 Родители
                                 </h2>
                                 <div className={s.inputs}>
-                                    <div className='input_inputs__1Lw9z'>
+                                    <div>
                                         <p>Имя</p>
                                         <input  value={value.parentname} onInput  = {(e) => setValue({parentname: e.target.value })} {...register ('parentname')}/>
                                     </div>
-                                    <div className='input_inputs__1Lw9z'>
+                                    <div>
                                         <p>Фамилия</p>
                                         <input  value={value.parentsurname} onInput  = {(e) => setValue({parentsurname: e.target.value })} {...register ('parentsurname')}/>
                                     </div>
-                                    <div className='input_inputs__1Lw9z'>
+                                    <div >
                                         <p>Контактный телефон</p>
                                         <InputMask  value={value.phone} onInput  = {(e) => setValue({phone: e.target.value })} {...register ('phone')} placeholder='+996 (999) 999-999'  mask={'+999 (999) 999-999'}/>
                                     </div>
