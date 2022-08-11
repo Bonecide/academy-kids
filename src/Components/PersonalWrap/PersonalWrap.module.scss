@@ -5,16 +5,90 @@
     align-items: center;
     justify-content: center;
     margin-top: 10px;
+    @include mobile {
+        width: 100%;
+    }
     .parent {
         position: relative;
         padding: 50px;
         padding-bottom: 0;
         width: 100%;
+        @include mobile {
+            padding: 50px 15px;
+        }
     }
     .absolute {
         position: absolute;
         top: 0;
         padding-left: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 88%;
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            width: 75%;
+            gap: 20px;
+            
+        }
+        .choose {
+            display: flex;
+            gap: 20px;
+            
+            @include mobile {
+                gap: 10px;
+            }
+            .bluebuttons {
+                display: flex;
+               align-items: center;
+               gap: 20px;
+                @include mobile {
+                    flex-direction: column-reverse;
+                    gap: 10px;
+                }
+                .stat {
+                    @include mobile {
+
+                    }
+                }
+            }
+            .arrowbox {
+                width: 50px;
+                height: 50px;
+                border: 2px solid $yellow;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: $blue-gradient;
+                border-radius: 10px;
+                cursor: pointer;
+                @include mobile {
+                    width: 36px;
+                    height: 36px;
+                }
+                img {
+                    @include mobile {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+            .box {
+                padding: 13px 20px;
+                border: 2px solid $yellow;
+                background: $blue-gradient;
+                border-radius: 10px;
+                cursor: pointer;
+                p {
+                    color: white;
+                }
+                @include mobile {
+                    padding: 8px 33px;
+                }
+            }
+        }
     }
 
     .wrap {
@@ -24,6 +98,9 @@
         border: 5px solid rgba(244, 248, 252, 0.7);
         border-radius: 15px;
         width: 100%;
-        
+        @include mobile {
+            padding: 20px 15px;
+            padding-top: 140px;
+        }
     }
 }

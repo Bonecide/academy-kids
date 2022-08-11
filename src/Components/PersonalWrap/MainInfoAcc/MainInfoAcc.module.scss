@@ -3,8 +3,10 @@
 .form {
     display: flex;
     flex-wrap: wrap;
-    
     flex-direction: column;
+    @include mobile {
+        margin-top: 20px;
+    }
     .inputs {
         display: flex;
         flex-wrap: wrap;
@@ -13,7 +15,9 @@
             
                 width: 30%;
                 margin-bottom: 20px;
-            
+            @include mobile {
+                width: 100%;
+            }
         }
     }
 }
@@ -41,6 +45,10 @@
         font-weight: 900;
         font-size: 20px;
         text-transform: uppercase;
+        @include mobile {
+            padding: 18px 65px;
+
+        }
     }
 }
 .changebutton {
@@ -57,5 +65,9 @@
         font-weight: 900;
         font-size: 20px;
         text-transform: uppercase;
+        @include mobile {
+            padding: 18px 65px;
+
+        }
     }
 }
