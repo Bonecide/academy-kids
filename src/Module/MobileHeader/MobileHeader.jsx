@@ -1,9 +1,10 @@
 import s from './MobileHeader.module.scss'
 import { useState } from 'react';
 import games from '../../fake-data/games.json';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 export default function MobileHeader() {
     const [isOpen,setIsOpen] = useState(false)
+    const navigate = useNavigate()
     return(
         <header className={s.header_container}>
                 <div className={s.header}>
@@ -16,7 +17,7 @@ export default function MobileHeader() {
                             <img className={s.logo} src="/img/mobileLogo.svg" alt="" />
                             </Link>
                     </div>
-                    <div>
+                    <div onClick={() => navigate('/personalAccount')}>
                             <img className={s.avatar} src="/img/avatar.png" alt="" />
                     </div> 
                     </div>
