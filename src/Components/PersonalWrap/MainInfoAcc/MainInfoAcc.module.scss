@@ -1,13 +1,20 @@
 @import '../../../styles/global.scss';
 
-.inputs {
+.form {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     
-    div {
-        width: 30%;
-        margin-bottom: 20px;
+    flex-direction: column;
+    .inputs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        div {
+            
+                width: 30%;
+                margin-bottom: 20px;
+            
+        }
     }
 }
 .parents {
