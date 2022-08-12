@@ -14,12 +14,12 @@ export default function GameWrapperAnzan() {
                 <div className={s.parent}>
                     <div className={s.absolute}>
                         <div className={s.cardWrap}>
-                            <img className={s.topStick} src={'/img/stick.png'}alt="" />
+                            <img className={s.topStick} src={'/img/CardStick.png'}alt="" />
                             <div className={s.Card}>
                                 
                                     <h2>Флеш-анзан</h2>
                             </div>
-                            <img className={s.bottomStick} src={'/img/stick.png'}alt="" />
+                            <img className={s.bottomStick} src={'/img/CardStick.png'}alt="" />
                         </div>
                         <div className={s.gameSettings__container}>
                             <div className={s.gameSettings}>

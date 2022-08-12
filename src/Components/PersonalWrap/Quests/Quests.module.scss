@@ -1,0 +1,63 @@
+@import '../../../styles/global.scss';
+.container {
+    max-height: 70vh;
+    overflow-y: scroll;
+    
+    .wrapper {
+            display: flex;
+            flex-direction: column;
+            padding-right: 20px;
+        .Wrap {
+            display: flex;
+            padding: 20px 15px;
+            align-items: center;
+            width: 100%;
+            &:nth-child(even) {
+                background: rgba(255, 255, 255, 0.5);
+            }
+            p {
+                font-weight: 600;
+                font-size: 16px;
+            }
+            border-radius: 8px;
+            .icons {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                img {
+                    cursor: pointer;
+                }
+                .play {
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: $blue-gradient;
+                    cursor: pointer;
+                    border-radius: 10px;
+                    border: 2px solid $yellow;
+                }
+            }
+            .name {
+                width: 30%;
+            }
+            .type {
+                width: 20%;
+            }
+            .time {
+                width: 20%;
+            }
+            .status {
+                width: 20%;
+            }
+            .points {
+                width: 10%;
+            }
+            .icons {
+                width: 10%;
+            }
+          
+        }
+    }
+}

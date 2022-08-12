@@ -3,9 +3,10 @@ import s from './PersonalWrap.module.scss'
 import { useState } from 'react';
 import InputMask from 'react-input-mask';
 import MainInfoAcc from './MainInfoAcc/MainInfoAcc';
+import Quests from './Quests/Quests';
 export default function PersonalWrap() {
 
-    
+    const [nowPage,setNowPage] = useState('main')
     return(
 
         <div className={s.container}>
@@ -13,14 +14,14 @@ export default function PersonalWrap() {
                 <div className={s.absolute}>
                     <img src="/img/AccountAvatar.svg" alt="" />
                     <div className={s.choose}>
-                        <div className={s.arrowbox}>
+                        <div onClick={() => setNowPage('main')} className={s.arrowbox}>
                             <img src="/img/icons/arrow-back.svg" alt="" />
                         </div>
                         <div className={s.bluebuttons}>
                             <div className={`${s.box} ${s.stat}`}>
                                 <p>Статистика</p>
                             </div>
-                            <div className={s.box} >
+                            <div onClick={() => setNowPage('quests')} className={s.box} >
                                 <p>Задания</p>
                             </div>
                         </div>
@@ -30,7 +31,8 @@ export default function PersonalWrap() {
                     </div>
                 </div>
                 <div className={s.wrap}>
-                    <MainInfoAcc/>
+                    {nowPage ==='main' &&  <MainInfoAcc/>}
+                    {nowPage ==='quests' &&  <Quests/>}
                 </div>
             </div>
         </div>

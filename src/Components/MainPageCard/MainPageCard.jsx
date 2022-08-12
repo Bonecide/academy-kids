@@ -4,7 +4,7 @@ export default function MainPageCard({img,link,buttonText}) {
     const navigate =useNavigate()
     return(
        <div className={s.container}>
-        <img className={s.topStick} src={'/img/stick.png'}alt="" />
+        <img className={s.topStick} src={'/img/CardStick.png'}alt="" />
          <div className={s.Card}>
             
             <div style={{'background' : `url(${img})`}} className={s.img}>
@@ -15,7 +15,7 @@ export default function MainPageCard({img,link,buttonText}) {
             </div>
             </div>
         </div>
-        <img className={s.bottomStick} src={'/img/stick.png'}alt="" />
+        <img className={s.bottomStick} src={'/img/CardStick.png'}alt="" />
        </div>
     )
 }

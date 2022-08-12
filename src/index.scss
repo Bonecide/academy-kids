@@ -6,6 +6,17 @@
   box-sizing: border-box;
   font-family: 'Source Sans Pro', sans-serif;
 }
+::-webkit-scrollbar {
+  width: 5px !important;
+}
+::-webkit-scrollbar-track {
+  background: #EBD6A7;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4952C;
+  border-radius: 8px;
+}
 body {
   background: url('../public/img/bg-desktop.png');
   background-attachment: fixed;
@@ -15,7 +26,7 @@ body {
     background-size: cover;
   }
 }
-h1,h2,h3,h4,h5 {
+h1,h2,h3,h4,h5,p {
   color : $brown
 }
 h1 {
@@ -39,6 +50,7 @@ h3 {
     font-size: 18px;
   }
 }
+
 h4 {
   font-weight: 900;
   font-size: 24px;
