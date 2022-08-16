@@ -1,7 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit'
 import quests from '../fake-data/Quests.json';
 
-const initialState = quests
+const initialState = {
+    info : quests
+}
 
 export const questsSlice = createSlice({
     
@@ -9,12 +11,15 @@ export const questsSlice = createSlice({
     initialState,
     reducers : {
        deleteQuest : (state,action) => {
-        state.splice (action.payload , 1)
+        state.info.splice (action.payload , 1)
+       },
+       setQuests : (state,action) => {
+        state.info = action.payload
        },
        
 
     }
 });
-export const { deleteQuest } = questsSlice.actions
+export const { deleteQuest,setQuests } = questsSlice.actions
 
 export default questsSlice.reducer

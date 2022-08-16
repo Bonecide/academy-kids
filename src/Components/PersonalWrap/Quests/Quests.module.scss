@@ -2,11 +2,18 @@
 .container {
     max-height: 70vh;
     overflow-y: scroll;
-    
+    @include mobile {
+        max-height: none;
+        overflow-y: unset;
+    }
     .wrapper {
             display: flex;
             flex-direction: column;
             padding-right: 20px;
+            @include mobile {
+                display: none;
+                overflow-y: unset;
+            }
         .Wrap {
             display: flex;
             padding: 20px 15px;
@@ -20,6 +27,7 @@
                 font-size: 16px;
             }
             border-radius: 8px;
+            
             .icons {
                 display: flex;
                 gap: 20px;
@@ -44,18 +52,39 @@
             }
             .type {
                 width: 20%;
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                cursor: pointer;
             }
             .time {
                 width: 20%;
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                cursor: pointer;
             }
             .status {
                 width: 20%;
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                cursor: pointer;
+                .active {
+                    color: $green;
+                }
             }
             .points {
                 width: 10%;
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                cursor: pointer;
             }
             .icons {
                 width: 10%;
+                
+
             }
           
         }
