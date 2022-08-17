@@ -118,10 +118,10 @@ export default function Quests() {
                                 <img style={{'transform' : `${timeFilters === 'decrement' ? 'rotate(180deg)' : 'rotate(0deg)'} `, 'transition' : 'all 0.3s'}} src="/img/icons/FiltersArrow.svg" alt="" />
                             </div>
                             <div onClick={()=> {
-                                if (timeFilters === 'decrement') {
-                                    setTimeFilters('increment')
+                                if (statusFilters === 'decrement') {
+                                    setStatusFilters('increment')
                                 } else {
-                                    setTimeFilters('decrement')
+                                    setStatusFilters('decrement')
                                 }
                             }} className={s.status}>
                                 <p>Статус</p>
