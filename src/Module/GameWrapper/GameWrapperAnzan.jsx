@@ -3,10 +3,11 @@ import Select from '../../Components/selects/Select'
 import s from './GameWrapperAnzan.module.scss'
 import { useState } from 'react';
 import Settings from '../../Components/Settings/Settings';
+import FleshAnzanGame from '../FleshAnzan/FleshAnzanGame';
 
 export default function GameWrapperAnzan() {
     const [isSettings,setIsSettings] = useState(false)
-    
+    const [isGame,setIsGame] = useState(false)
 
     return(
         <div className={` ${s.container}`}>
@@ -45,35 +46,38 @@ export default function GameWrapperAnzan() {
                         <div className={s.gameSettings}>
                                     <img src={'/img/icons/play.svg'} alt="" />
                             </div>
-                            <div onClick={() => setIsSettings(!isSettings)} style= {{'background' : isSettings && 'linear-gradient(142.82deg, #97CE4E 11.11%, #58AA2C 83.28%)'}} className={s.gameSettings}>
+                            <div onClick={() => !isGame && setIsSettings(!isSettings)} style= {{'background' : isSettings && 'linear-gradient(142.82deg, #97CE4E 11.11%, #58AA2C 83.28%)'}} className={s.gameSettings}>
                                     <img src={'/img/icons/gamesetting.svg'} alt="" />
                             </div>
                         </div>
                     </div>
                 {!isSettings ? (
-                <>
+                 <>
               
-                    <div className={s.settings}>
-                    <Select className={'inputs'}/>
-                    <ChooseTemp className={'inputs'}/>
-                    <ChooseTemp className={'inputs'}/>
-                    <ChooseTemp className={'inputs'} title='Время, сек.' type="Скорость"/>
+                <div className={`${s.settings} ${isGame && s.hiddenMobile}`}>
+                <Select disable={isGame && true} className={'inputs'}/>
+                <ChooseTemp disable={isGame && true} className={'inputs'}/>
+                <ChooseTemp disable={isGame && true} className={'inputs'}/>
+                <ChooseTemp disable={isGame && true} className={'inputs'} title='Время, сек.' type="Скорость"/>
                 </div>
-                <div className={s.button}>
-                    <button>Начать</button>
-                </div>
-                </>  
+           {!isGame && (
+            <div className={s.button}>
+                <button onClick={() => setIsGame(true)}>Начать</button>
+            </div>
+           )}
+            </>  
                 ) : <Settings/>}
 
                 </div>
                 
              
-                
+                {isGame && <FleshAnzanGame setIsGame={setIsGame}/>}
                 </div>
                  
                 <div className={s.sideImg}>
                     <img src={'/img/BoyAndGirlFull.png'} alt="" />
                 </div>
+                
         </div>
     )
 }

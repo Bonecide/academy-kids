@@ -22,7 +22,8 @@
         align-items: center;
         gap: 50px;
         padding: 50px;
-        padding-top: 80px;
+        padding-top: 60px;
+        padding-bottom: 30px;
         border: 5px solid #F4F8FCB2;
         background: rgba(254, 231, 205, 0.7);
         border-radius: 15px;
@@ -84,6 +85,10 @@
     z-index: 2;
     @include mobile {
         padding: 20px;
+        padding-right: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .absolute {
         position: absolute;
@@ -102,6 +107,9 @@
     margin-top: 2%;
     gap: 20px;
     display: flex;
+    @include mobile {
+        gap: 10px;
+    }
     .gameSettings {
         width: 50px;
         height: 50px;
@@ -123,6 +131,11 @@
     }
     @include mobile {
         margin-top: 0;
+    }
+}
+.hiddenMobile {
+    @include mobile {
+        display: none !important;
     }
 }
 .Card {
@@ -178,6 +191,8 @@
         bottom: 0;
         z-index: -1;
         left: 40%;
+        max-width: 250px;
+        max-height: 200px;
     }
     @include mobile {
         display: none;
